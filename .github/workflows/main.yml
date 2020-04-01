@@ -7,7 +7,7 @@ jobs:
   build:
     name: Build Web
     env:
-      my_secret: ${{secrets.commit_secret}}
+      my_secret: eb1998bf68a4feca2598c3bcb8bfc2e2c89e0c5c
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
@@ -27,7 +27,7 @@ jobs:
           git config --global user.name skim
           git status
           # change this remote url for examle your remote url is https://github.com/onatcipli/flutter_web.git then the following:
-          git remote add origin https://${{secrets.commit_secret}}@github.com/SwimingKim/flutter_clock_application.git
+          git remote add origin https://eb1998bf68a4feca2598c3bcb8bfc2e2c89e0c5c@github.com/SwimingKim/flutter_clock_application.git
           git checkout -b gh-pages
           git add --all
           git commit -m "update"
